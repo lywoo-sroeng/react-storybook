@@ -1,20 +1,20 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Card from "./Card";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Card from './Card';
 
 const meta: Meta<typeof Card> = {
-  title: "Example/Card",
+  title: 'Example/Card',
   component: Card,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
-}
+  tags: ['autodocs'],
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    children: "test card",
-  }
+    children: 'test card',
+  },
 };
