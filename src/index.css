@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -33,7 +37,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
-    --text-h: #f3f4f6;
+    /* --text-h: #f3f4f6; */
     --bg: #16171d;
     --border: #2e303a;
     --code-bg: #1f2028;
@@ -111,4 +115,12 @@ code {
 
 button {
   cursor: pointer;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #0f172a 0%, #25636b 35%, #7c3aed 70%, #06b6d4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(2.4rem, 7vw, 5.5rem); /*min,prefer,max*/
 }
